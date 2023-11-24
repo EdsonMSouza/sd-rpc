@@ -4,6 +4,11 @@ import rpyc
 porta = 18812 # porta sugerida
 requisicao = rpyc.connect("ip_do_servidor", porta) 
 
+# Exemplos de recursos
+# echo("texto")
+# soma(x, y)
+# cep("cep")
+
 retorno = requisicao.root.echo("Funcionando...")
 print(retorno)
 
